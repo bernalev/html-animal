@@ -57,25 +57,21 @@
 		height: 11%;
 		top: 60%;
 		left: 45%;
+		z-index: 3;
 	}
-	.lips {
-		height: 10%;
-		width: 30%;
-		background: lightgrey;
-		top: 71%;
-		left: 35%;
-	}
-	.lips .left{
+	.lip {
 		background: grey;
-		border: 1px solid black;
-		width: 50%;
-		height: 100%;
+		border-bottom: 5px solid black;
+		border-bottom-right-radius: 100%;
+		border-bottom-left-radius: 100%;
+		width: 20%;
+		height: 20%;
+		top: 60%;
 	}
-	.lips .right{
-		background: grey;
-		border: 1px solid black;
-		width: 50%;
-		height: 100%;
+	.lip.left {
+		left: 30%;
+	}
+	.lip.right {
 		left: 50%;
 	}
 </style>
@@ -89,10 +85,8 @@
 			<div class="bead right"></div>
 		</div>
 		<div class="snout"></div>
-		<div class="lips">
-			<div class="left"></div>
-			<div class="right"></div>
-		</div>
+		<div class="lip left"></div>
+		<div class="lip right"></div>
 	</div>
 </div>
 
