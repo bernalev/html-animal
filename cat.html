@@ -15,6 +15,7 @@
 		margin: auto;
 		margin-top: 100px;
 		background: #FDD;
+		z-index: -2;
 	}
 	.cat * {
 		position: absolute;
@@ -74,19 +75,45 @@
 	.lip.right {
 		left: 50%;
 	}
+	.ear {
+		background: grey;
+		z-index: -1;
+		width: 30%;
+		height: 30%;
+	}
+	.ear.left {
+		border-radius: 10% 60% 10% 60%;
+	}
+	.ear.right {
+		border-radius: 60% 10% 60% 10%;
+		left: 70%;
+	}
+	.ear .inner {
+		background: lightpink;
+		width: 80%;
+		height: 80%;
+		left: 10%;
+		top: 10%;
+	}
 </style>
 
 <div class="cat">
 	<div class="head">
 		<div class="eye left">
-			<div class="bead left"></div>
+			<div class="bead"></div>
 		</div>
 		<div class="eye right">
-			<div class="bead right"></div>
+			<div class="bead"></div>
 		</div>
 		<div class="snout"></div>
 		<div class="lip left"></div>
 		<div class="lip right"></div>
+		<div class="ear left">
+			<div class="inner left ear"></div>
+		</div>
+		<div class="ear right">
+			<div class="inner right ear"></div>
+		</div>
 	</div>
 </div>
 
