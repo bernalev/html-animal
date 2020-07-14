@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<style>
+	.cat {
+		--cat-fur: grey;
+		height: 400px;
+		width: 400px;
+		display: block;
+		position: relative;
+		margin: auto;
+		margin-top: 100px;
+		background: #FDD;
+	}
+	.cat * {
+		position: absolute;
+	}
+	.head {
+		background: var(--cat-fur);
+		border-radius: 50%; 
+		width: 60%;
+		height: 55%;
+		left: 20%;
+	}
+	.eye {
+		background: black;
+		border-radius: 70%; 
+		height: 18%;
+		width: 10%;
+		z-index: 1;
+		top: 35%;
+	}
+	.eye.left{
+		left: 28%;
+	}
+	.eye.right{
+		left: 61%;
+	}
+	.eye .bead {
+		background: white;
+		z-index: 2;
+		border-radius: 70%; 
+		height: 50%;
+		width: 50%;
+		left: 5%;
+		top: 5%;
+	}
+	.snout {
+		background: black;
+		border-radius: 30% 30% 120% 30%;
+		transform: rotate(-135deg);
+		width: 10%;
+		height: 11%;
+		top: 60%;
+		left: 45%;
+	}
+	.lips {
+		height: 10%;
+		width: 30%;
+		background: lightgrey;
+		top: 71%;
+		left: 35%;
+	}
+	.lips .left{
+		background: grey;
+		border: 1px solid black;
+		width: 50%;
+		height: 100%;
+	}
+	.lips .right{
+		background: grey;
+		border: 1px solid black;
+		width: 50%;
+		height: 100%;
+		left: 50%;
+	}
+</style>
+
+<div class="cat">
+	<div class="head">
+		<div class="eye left">
+			<div class="bead left"></div>
+		</div>
+		<div class="eye right">
+			<div class="bead right"></div>
+		</div>
+		<div class="snout"></div>
+		<div class="lips">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
