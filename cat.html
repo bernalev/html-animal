@@ -88,6 +88,32 @@
 		transform: rotate(-35deg) scaleX(-1);
 		left: 63%;
 	}
+	.whiskers {
+		height: 30%;
+		width: 30%;
+		top: 40%;
+		left: -15%;
+	}
+	.whiskers * {
+		background: black;
+		height: 10%;
+		width: 100%;
+		z-index: 2;
+	}
+	.whisker.one {
+		transform: rotate(20deg);
+	}
+	.whisker.two {
+		top: 45%;
+	}
+	.whisker.three {
+		transform: rotate(-20deg);
+		top: 90%;	
+	}
+	.whiskers.right {
+		left: 85%;
+		transform: scaleX(-1);
+	}
 </style>
 
 <div class="cat">
@@ -103,6 +129,16 @@
 		<div class="lip right"></div>
 		<div class="ear left"></div>
 		<div class="ear right"></div>
+		<div class="whiskers left">
+			<div class="whisker one"></div>
+			<div class="whisker two"></div>
+			<div class="whisker three"></div>
+		</div>
+		<div class="whiskers right">
+			<div class="whisker one"></div>
+			<div class="whisker two"></div>
+			<div class="whisker three"></div>
+		</div>
 	</div>
 </div>
 
